@@ -6,6 +6,7 @@ struct node {int i; struct node *next; };
 void print_list (struct node *n){
   while(n){//keep going as long as n isnt null
     printf("[%d], ",n->i);
+    n=n->next;
   }   
   printf("\n");
 }
